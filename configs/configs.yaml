@@ -1,0 +1,39 @@
+device: 'cuda:0'
+seed: 42
+dataset: "dataset/"
+lr: 0.0005
+l2: 0.01
+lr_dc: 0.1
+lr_decay_step: 3
+mask_prob: 0.5  
+batch_size: 32
+num_att: 2
+num_att_ctx: 2
+num_heads: 4
+num_heads_ctx: 4
+num_iter: 200
+seq_len: 16  
+topk_att: 64  
+early_stop: 1000 
+K: 128
+num_epochs: 1000
+model: "LiveRec"
+model_path: "logs"
+mto: "liverec"
+cache_dir: "dataset/raw/"
+debug: False
+top_k: 20
+M: 100001
+N: 162627
+uniform: False
+caching: True
+fr_ctx: True
+fr_rep: True
+max_avail: 1301
+
+# Num users:  100000
+# Num streamers:  162625
+# Num interactions:  3051733
+# Estimated watch time:  799059.25
+# M: 100001 / N: 162627
+# Num timesteps:  6148
